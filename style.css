@@ -11,8 +11,10 @@ align-items: center;
 justify-content: space-between;
 }
 .navbar{
-    margin:0px 60px;
-    padding-top: 20px;
+    margin:0px 100px;
+    padding: 20px;
+    
+
 }
 .container_1{
     min-height:100%;
@@ -32,15 +34,27 @@ justify-content: space-between;
    
     cursor: pointer;
 }
+
 .links > h1{
    font-size: 16px;
    color: white;
-   margin:0px 6px;
+   margin:0 2rem;
    font-weight: 700;
    text-decoration-line: underline;
    text-decoration-color: white;
    padding-bottom: 10px;
 }
+@media (max-width: 768px){
+    .navbar{
+        margin:0px 20px;
+        padding: 20px;
+    }
+    .links > h1{
+        margin:0 1rem;
+       
+    }
+       
+   }
 .links_1{
     display: flex;
     align-items: center;
@@ -65,13 +79,16 @@ justify-content: space-between;
     height: 60%;
 }
 .text_1{
-    font-size: 115px;
 letter-spacing: 1px;
 line-height: 124px;
 text-transform: uppercase;
 color: #4d4d4d;
 font-family: "Bebas";
+font-size: 100px;
+
+font-size: clamp(2rem, 10vw, 10rem);
 }
+
 .text_2{
     font-size: 19px;
 letter-spacing: 1px;
@@ -83,7 +100,7 @@ margin-left: 9px;
 }
  
 .navbar_2{
-    padding: 20px 90px;
+    padding: 20px 30px;
 }
 .navbar_2 > .logo{
     box-shadow: 0 0 10px black;
@@ -119,7 +136,7 @@ align-items: center;
     font-family: "Oswald";
 }
 .lorem{
-    width: 814px;
+    width: clamp(300px, 50%, 500px);
     height: 339px;
     font-size: 16px;
     line-height: 24px;
@@ -150,6 +167,7 @@ margin-right: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
  }
 .he >h1{
     opacity: 0.502;
